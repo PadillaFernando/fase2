@@ -211,10 +211,6 @@
 // Al final de cada ciclo se ejecuta la función update.
 
 function loop(start, test, update, body) {
-        // while(test(start)){
-        //     body(start)
-        //     start = update(start)
-        // }
         for (let index = start; test(index); index = update(index)) {
             body(index)     
         }
