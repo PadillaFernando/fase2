@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title"> Hello world!</h1>
+
+    <button id="red"> red</button>
+    
+    <button id="green"> green</button>
+    
+    <button id="blue"> blue</button>
+
+    <script>
+        const title = document.getElementById('title')
+        const redButton = document.getElementById('red')
+        const greenButton = document.getElementById('green')
+        const blueButton = document.getElementById('blue')
+
+        redButton.addEventListener('click', function(){
+            title.style = 'color: red' //style es un elemento que puede tomar todos los estilos de css
+            redButton.style.backgroundColor = 'red'
+        })
+
+        greenButton.addEventListener('click', function(){
+            title.style = 'color: green'
+        })
+
+        blueButton.addEventListener('click', function(){
+            title.style = 'color: blue'
+        })
+
+    </script>
+
+
+</body>
+</html>
